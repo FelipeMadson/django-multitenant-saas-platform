@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-multitenant-saas-platform"
+version = "1.0.0"
+authors = [{ name = "Felipe Madison", email = "160553421+FelipeMadson@users.noreply.github.com" }]
+description = "Enterprise-grade Django 5 multi-tenant SaaS platform with isolated tenant boundaries, DRF REST API, and subscription management"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "Django>=5.0.0",
+    "djangorestframework>=3.15.0",
+    "pydantic>=2.7.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0.0",
+    "pytest-django>=4.8.0"
+]
